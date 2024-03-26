@@ -11,7 +11,7 @@
   
   /* Style for the dropdown items */
   .dropdown-menu a:hover {
-    background-color: blue !important; /* Change the background color on hover */
+    background-color: rgb(103, 103, 238) !important; /* Change the background color on hover */
     color: white; /* Change the text color on hover */
   }
   /* Style for the navigation items */
