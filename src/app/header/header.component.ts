@@ -8,11 +8,12 @@ import { GANNFanangleComponent } from '../Calculator/gann-fanangle/gann-fanangle
 import { ElliottWaveComponent } from '../Calculator/elliott-wave/elliott-wave.component';
 import { FibonacciComponent } from '../Calculator/fibonacci/fibonacci.component';
 import { PivotComponent } from '../Calculator/pivot/pivot.component';
+import { CamarillaComponent } from '../Calculator/camarilla/camarilla.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, AdvanceGANNComponent, GANNSQComponent, GANNSRComponent, HexagonComponent, GANNFanangleComponent, ElliottWaveComponent, FibonacciComponent, PivotComponent,],
+  imports: [RouterLink, AdvanceGANNComponent, GANNSQComponent, GANNSRComponent, HexagonComponent, GANNFanangleComponent, ElliottWaveComponent, FibonacciComponent, PivotComponent, CamarillaComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

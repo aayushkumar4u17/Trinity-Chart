@@ -16,6 +16,7 @@ import { IntradayComponent } from './Time-Calculators/intraday/intraday.componen
 import { MonthlyComponent } from './Time-Calculators/monthly/monthly.component';
 import { PressureComponent } from './Time-Calculators/pressure/pressure.component';
 import { TimeComponent } from './Time-Calculators/time/time.component';
+import { CamarillaComponent } from './Calculator/camarilla/camarilla.component';
 
 export const routes: Routes = [
 
@@ -37,5 +38,6 @@ export const routes: Routes = [
     { path: 'monthly', component: MonthlyComponent},
     { path: 'pressure', component: PressureComponent},
     { path: 'time', component: TimeComponent},
+    { path: 'camarilla', component: CamarillaComponent}
 
 ];

@@ -8,6 +8,16 @@
   pointer-events: auto;
 
 }
+.navbar-brand img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+
 
 /* Style for the dropdown items */
 .dropdown-menu a:hover {
