@@ -1,6 +1,371 @@
-.slogan{
-    margin-left: 400px;
-    font-style: italic;
-    font-family: sans-serif;
-    font-weight: bolder;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: rgb(176, 48, 48);
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    font-family: "Stencil", sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+    border: 5px solid black;
+    padding: 40px;
+    margin: 40px auto;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header h1 {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container2 {
+    text-align: center;
+    /* Center align the content */
+
+}
+
+.img {
+    width: 1000px;
+    height: 500px;
+    object-fit: fill;
+    border: 10px solid #333;
+    /* Add animation */
+    animation: fadeIn 1s ease-in-out;
+    /* Add transition */
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.vision {
+    border: 2px solid #333;
+    /* Add a border around the vision section */
+    padding: 20px;
+    /* Add some padding inside the border */
+    text-align: center;
+    /* Center align the content */
+    margin: 20px auto;
+    /* Center the box horizontally */
+    width: 100%;
+    /* Set the width of the box */
+    max-width: 600px;
+    /* Limit the maximum width of the box */
+    animation-name: fadeInUp;
+    /* Apply the fadeInUp animation */
+    animation-duration: 1s;
+    /* Animation duration */
+    animation-fill-mode: both;
+    /* Ensure the element stays in the final state of the animation */
+}
+
+.vision h1 {
+    font-weight: bold;
+    /* Make the h2 element bold */
+    position: relative;
+    /* Position the h2 element */
+}
+
+.vision h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    /* Set the initial width of the line */
+    height: 2px;
+    /* Set the height of the line */
+    background-color: #333;
+    /* Line color */
+    position: absolute;
+    bottom: -10px;
+    /* Position the line below the h2 */
+    left: 50%;
+    /* Center the line horizontally */
+    transform: translateX(-50%);
+    /* Center the line horizontally */
+    animation: lineExpand 1s infinite alternate;
+    /* Apply the lineExpand animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    to {
+        width: 100px;
+        /* Set the expanded width of the line */
+    }
+}
+
+.container3 {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.container3 h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    /* Add some space between the heading and the line */
+}
+
+.container3 h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: lineExpand 1s infinite alternate;
+}
+
+.container3 .container31 {
+    margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    to {
+        width: 100px;
+    }
+}
+
+.container4 {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.container4 h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    /* Add some space between the heading and the line */
+}
+
+.container4 h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: lineExpand 1s infinite alternate;
+}
+
+.container4 .container41 {
+    margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    to {
+        width: 100px;
+    }
+}
+
+.container5 {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.container5 h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    /* Add some space between the heading and the line */
+}
+
+.container5 h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: lineExpand 1s infinite alternate;
+}
+
+.container5 .container51 {
+    margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    to {
+        width: 100px;
+    }
+}
+
+.report {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    /* width: 300px; */
+    animation: slideIn 1s ease-in-out;
+}
+
+.reportImg {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.reportImg img {
+    max-width: 100%;
+}
+
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+.gann {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    border: 2px solid black; /* Add a border */
+    padding: 20px; /* Add padding */
+    margin: 20px; /* Add margin */
+    animation: slideIn 1s ease-in-out; /* Add animation */
+}
+
+.gann p {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Add space between text and image */
+}
+
+.img3 {
+    flex: 1; /* Take up remaining space */
+    text-align: right; /* Align image to the right */
+}
+
+.img3 img {
+    max-width: 100%; /* Ensure image stays within container */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px); /* Start off-screen to the left */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        transform: translateX(0); /* Slide in to the right */
+        opacity: 1; /* Fade in */
+    }
 }
