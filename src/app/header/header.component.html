@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/logo/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="live-analysis">Stock Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog">Blogs</a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Calculators
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/advance-gann">Advance GANN SQ of 9</a></li>
+            <li><a class="dropdown-item" routerLink="/sq">GANN SQ of 9</a></li>
+            <li><a class="dropdown-item" routerLink="/home/sr">GANN S/R</a></li>
+            <li><a class="dropdown-item" routerLink="/hexagon">Hexagon S/R </a></li>
+            <li><a class="dropdown-item" routerLink="/fanangle">GANN FanAngle</a></li>
+            <li><a class="dropdown-item" routerLink="elliott">Elliott Wave</a></li>
+            <li><a class="dropdown-item" routerLink="fibonacci">Fibonacci Retracement</a></li>
+            <li><a class="dropdown-item" routerLink="pivot">Pivot Point</a></li>
+            <li><a class="dropdown-item" routerLink="camarilla">Camarilla</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Time Calculators
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/intraday">GANN Intraday Reversal Time</a></li>
+            <li><a class="dropdown-item" routerLink="/important">GANN Important Date </a></li>
+            <li><a class="dropdown-item" routerLink="/pressure">GANN Pressure Dates </a></li>
+            <li><a class="dropdown-item" routerLink="/dynamic">GANN Dynamic Dates</a></li>
+            <li><a class="dropdown-item" routerLink="/time">GANN Time Cycle</a></li>
+            <li><a class="dropdown-item" routerLink="/monthly">GANN Monthly Dates</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex mr-3" role="search">
+      <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

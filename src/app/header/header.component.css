@@ -1,0 +1,45 @@
+.dropdown-menu {
+  pointer-events: none;
+}
+
+/* Style for the dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  pointer-events: auto;
+
+}
+/* .navbar-brand img {
+  transition: transform 0.4s ease, filter 0.3s ease;
+} */
+
+/* .navbar-brand img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+} */
+
+
+
+/* Style for the dropdown items */
+.dropdown-menu a:hover {
+  background-color: rgb(103, 103, 238) !important;
+  /* Change the background color on hover */
+  color: white;
+  /* Change the text color on hover */
+}
+
+/* Style for the navigation items */
+.nav-item {
+  margin-right: 15px;
+  /* Adjust the spacing as needed */
+}
+
+/* Style for the brand logo */
+.navbar-brand img {
+  background-color: transparent;
+  margin-left: 10px;
+  width: 180px;
+  /* Adjust the size as needed */
+  height: 100px;
+  margin-right: 10px;
+  /* opacity: 0.3;*/
+}
