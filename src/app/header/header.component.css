@@ -9,6 +9,7 @@
 
 }
 
+
 /* .navbar-brand img {
   transition: transform 0.4s ease, filter 0.3s ease;
 } */
@@ -43,4 +44,40 @@
   height: 100px;
   margin-right: 10px;
   /* opacity: 0.3;*/
+}
+
+.navbar {
+  height: 80px;
+  /* Adjust the height as needed */
+  position: fixed;
+  width: 100%;
+  /* Ensures the navbar spans the full width of the viewport */
+  top: 0;
+  /* Keeps the navbar fixed at the top */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  color: black;
+  /* Set the font color to black */
+}
+
+.form-control {
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 93, 213, 0.25);
+  /* Change shadow color to #215dd5 on focus */
+}
+
+.btn:hover {
+  background-color: #215dd5;
+  /* Change background color on hover */
+  color: #fff;
+  /* Change text color on hover */
 }

@@ -19,5 +19,4 @@ import { CamarillaComponent } from '../Calculator/camarilla/camarilla.component'
 })
 export class HeaderComponent {
 
-
 }
