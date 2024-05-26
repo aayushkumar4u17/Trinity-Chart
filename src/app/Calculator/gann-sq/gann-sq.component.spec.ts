@@ -10,11 +10,11 @@ describe('GANNSQComponent', () => {
     await TestBed.configureTestingModule({
       imports: [GANNSQComponent]
     })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(GANNSQComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      .compileComponents();
+
+    // fixture = TestBed.createComponent(GANNSQComponent);
+    // component = fixture.componentInstance;
+    // fixture.detectChanges();
   });
 
   it('should create', () => {

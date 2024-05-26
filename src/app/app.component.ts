@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LiveAnalysisComponent } from './live-analysis/live-analysis.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
+import './app.component.css';
 
 @Component({
   selector: 'app-root',

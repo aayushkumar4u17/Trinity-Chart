@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
+    /* to use in all pages background */
+    /* background-color: rgb(244, 247, 252) !important; */
 }
 
 .header {
