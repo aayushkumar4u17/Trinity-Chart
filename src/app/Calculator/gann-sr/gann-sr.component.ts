@@ -18,6 +18,11 @@ export class GANNSRComponent {
   @Input() Instructions: string = 'Enter the current price of any underlying asset during and make smarter trading decisions with our real-time calculator.';
 
   price: number = 0;
+  onSubmit() {
+    if (this.price !== undefined) {
+      this.calculateSum();
+    }
+  }
   calculateSum() {
     return this.price * 10;
   }
