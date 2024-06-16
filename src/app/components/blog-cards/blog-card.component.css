@@ -1,0 +1,31 @@
+.blog-card {
+    height: 280px;
+    width: 360px;
+    margin: 10px;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif !important;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+
+    .in-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .img-ctn {
+            background: url("../../../assets/how\ to\ use\ img.jpeg") no-repeat;
+            background-size: cover;
+            background-color: #cccccc;
+            height: 270px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .title-ctn {
+            font-weight: 500;
+            padding: 10px;
+            line-height: 0.5;
+        }
+    }
+}

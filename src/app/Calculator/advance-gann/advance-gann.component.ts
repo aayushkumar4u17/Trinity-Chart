@@ -3,12 +3,12 @@ import { FormsModule, NgModel } from '@angular/forms';
 
 @Component({
   imports: [FormsModule],
-  styleUrl: '../../app.component.css',
+  // styleUrl: '../../app.component.css',
   selector: 'app-advance-gann',
   standalone: true,
   // imports: [],
   templateUrl: './advance-gann.component.html',
-  // styleUrl: './advance-gann.component.css'
+  styleUrl: './advance-gann.component.css'
 })
 export class AdvanceGANNComponent {
   @Input() Title: string = 'Gann SQ';

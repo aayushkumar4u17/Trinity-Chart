@@ -1,0 +1,19 @@
+.rec-img-input {
+    color: white !important;
+
+    p a {
+        text-decoration: none;
+        color: white !important;
+    }
+
+    p a:hover {
+        /* text-decoration: none; */
+        text-decoration: underline;
+        color: white !important;
+    }
+}
+
+.rec-img-input img {
+    cursor: pointer;
+    height: 150px;
+}
