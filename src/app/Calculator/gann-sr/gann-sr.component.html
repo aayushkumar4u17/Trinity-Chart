@@ -4,67 +4,11 @@
     <div class="calc-in-ctn">
         <div class="rec-calc">
             This portion will be used for listing all calculators recomendation
-            <!-- <label for="cars">Choose a car:</label> -->
-
-            <!-- <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select> -->
-            <!-- <a href="#">Gann SR Calculator</a>
-            <a href="#">Gann SR Calculator</a>
-            <a href="#">Gann SR Calculator</a>
-            <a href="#">Gann SR Calculator</a>
-            <a href="#">Gann SR Calculator</a> -->
-            <!-- <div class="container">
-                <div id="sidebar" class="sidebar collapsed">
-                    <button id="toggle-btn" class="toggle-btn" (click)="{togglerl}" onclick="{togglerl}">☰</button>
-                    <ul class="nav-list">
-                        <li><a href="#home">Home</a></li>s
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div> -->
-            <!-- <div class="content">
-                    <h1>Welcome to My Website</h1>
-                    <p>This is the content area.</p>
-                </div> -->
-            <!-- </div> -->
-            <!-- <script src="script.ts"></script> -->
         </div>
 
     </div>
     <div class="calc-main-ctn">
-
-        <div class="head-ctn">
-            <!-- Page Hero : Start here -->
-            <div class="heading-ctn">
-                <h1 id="page-heading" class="heading-text">
-                    Gann SQ of 9 <span class="green">Support</span> & <span class="red">Resistance</span> Calculator
-                </h1>
-            </div>
-            <div class="head-underline"></div>
-            <!-- Page Hero : End here -->
-
-            <!-- Space for ADS : Start Here -->
-            <div class="ads-ctn">
-                <div class="ad-728-90">Space for ADS</div>
-            </div>
-            <!-- Space for ADS : End Here -->
-
-            <div class="intro-ctn">
-                <h2 id="brief-1">
-                    "Elevate your trading skills with our GANN <span class="green">Support</span> & <span
-                        class="red">Resistance</span> Calculator"
-                </h2>
-                <h3 id="brief-2">
-                    "Enter the current price of any underlying asset during and make smarter
-                    trading decisions with our real-time calculator."
-                </h3>
-            </div>
-        </div>
+        <page-hero [Title]="pageInput.title" [brief1]="pageInput.brief1" [brief2]="pageInput.brief2"></page-hero>
         <div class="calc-container">
             <div class="calc-ctn">
                 <div class="calc-ctn-inside">
@@ -86,15 +30,15 @@
                     </div>
                     <div class="main-calc-ctn">
                         <div class="calc-input-ctn">
-                            <div class="get-input">
+                            <form class="get-input" contactForm (ngSubmit)="onSubmit()">
                                 <div class="input-1">
                                     <label for="price">Enter Price*</label>
-                                    <input type="number" id="price" [(ngModel)]="price">
+                                    <input type="number" name="someInput" [(ngModel)]="someInput">
                                 </div>
-                                <button class="calculate-btn" (click)="calculateSum()">
+                                <button class="calculate-btn">
                                     Calculate
                                 </button>
-                            </div>
+                            </form>
                             <div class="rec-img-input">
                                 <p><a href="https://trinitychart.com">How to Use?</a></p>
                                 <img src="../../../assets/how to use img.jpeg" alt="How to Use?">
@@ -146,69 +90,69 @@
                             <div class="support-ctn">
                                 <div class="calc-output-text">
                                     <label for="price">Support 1</label>
-                                    <output type="number" id="s1">{{ calculateSum() }}</output>
+                                    <output type="number" id="1001"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 2</label>
-                                    <output type="number" id="s2">{{ calculateSum() }}</output>
+                                    <output type="number" id="s2"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 3</label>
-                                    <output type="number" id="s3">{{ calculateSum() }}</output>
+                                    <output type="number" id="s3"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 4</label>
-                                    <output type="number" id="s4">{{ calculateSum() }}</output>
+                                    <output type="number" id="s4"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 5</label>
-                                    <output type="number" id="s5">{{ calculateSum() }}</output>
+                                    <output type="number" id="s5"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 6</label>
-                                    <output type="number" id="s6">{{ calculateSum() }}</output>
+                                    <output type="number" id="s6"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 7</label>
-                                    <output type="number" id="s7">{{ calculateSum() }}</output>
+                                    <output type="number" id="s7"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Support 8</label>
-                                    <output type="number" id="s8">{{ calculateSum() }}</output>
+                                    <output type="number" id="s8"></output>
                                 </div>
                             </div>
                             <div class="resistance-ctn">
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 1</label>
-                                    <output type="number" id="r1">{{ calculateSum() }}</output>
+                                    <output type="number" id="r1"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 2</label>
-                                    <output type="number" id="r2">{{ calculateSum() }}</output>
+                                    <output type="number" id="r2"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 3</label>
-                                    <output type="number" id="r3">{{ calculateSum() }}</output>
+                                    <output type="number" id="r3"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 4</label>
-                                    <output type="number" id="r4">{{ calculateSum() }}</output>
+                                    <output type="number" id="r4"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 5</label>
-                                    <output type="number" id="r5">{{ calculateSum() }}</output>
+                                    <output type="number" id="r5"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 6</label>
-                                    <output type="number" id="r6">{{ calculateSum() }}</output>
+                                    <output type="number" id="r6"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 7</label>
-                                    <output type="number" id="r7">{{ calculateSum() }}</output>
+                                    <output type="number" id="r7"></output>
                                 </div>
                                 <div class="calc-output-text">
                                     <label for="price">Resistance 8</label>
-                                    <output type="number" id="r8">{{ calculateSum() }}</output>
+                                    <output type="number" id="r8"></output>
                                 </div>
                             </div>
                         </div>

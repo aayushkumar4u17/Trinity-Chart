@@ -25,11 +25,11 @@
 @media screen and (max-width: 1652px) {
     .calc-in-ctn {
         /* display: none !important */
-        width: 15% !important;
+        width: 18% !important;
     }
 
     .calc-main-ctn {
-        width: 70% !important;
+        width: 80% !important;
         /* width: 100% !important; */
     }
 }
@@ -46,7 +46,7 @@
 }
 
 .blog-main-ctn {
-    width: 62%;
+    width: 80%;
     margin: 0;
     margin-top: 10px;
     /* border: 1px solid red; */
@@ -56,7 +56,8 @@
 }
 
 .blog-list-ctn {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: fit-content;
     grid-template-columns: auto auto auto;

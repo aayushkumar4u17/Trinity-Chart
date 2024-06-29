@@ -1,1 +1,169 @@
-<p>time works!</p>
+<!-- make a component to use it on all calculators -->
+<!-- make the text in for ids #page-heading, #brief-1, #brief-2 dynamic and assign values from ts to them.  -->
+<section class="calc-page">
+    <div class="calc-in-ctn">
+        <div class="rec-calc">
+            This portion will be used for listing all calculators recomendation
+        </div>
+
+    </div>
+    <div class="calc-main-ctn">
+        <page-hero [Title]="pageInput.title" [brief1]="pageInput.brief1" [brief2]="pageInput.brief2"></page-hero>
+        <div class="calc-container">
+            <div class="calc-ctn">
+                <div class="calc-ctn-inside">
+                    <div class="promo-ctn">
+                        <div class="yt-vid-ctn">
+                            <img src="../../../assets/subscribe-yt-video.png" alt="Watch Now">
+                        </div>
+                        <div class="yt-subs-ctn">
+                            <img src="../../../assets/subscribe-yt-banner.png" alt="Subscribe">
+                        </div>
+                    </div>
+                    <div class="instruction-ctn">
+                        <p>
+                            {{Instructions}}
+                            <!-- Enter the current price of any underlying asset during and make smarter trading decisions
+                                with our
+                                real-time calculator. -->
+                        </p>
+                    </div>
+                    <div class="main-calc-ctn">
+                        <div class="calc-input-ctn">
+                            <form class="get-input">
+                                <div class="input-1">
+                                    <label for="price">Enter Price*</label>
+                                    <input type="number" name="someInput">
+                                </div>
+                                <button class="calculate-btn">
+                                    Calculate
+                                </button>
+                            </form>
+                            <div class="rec-img-input">
+                                <p><a href="https://trinitychart.com">How to Use?</a></p>
+                                <img src="../../../assets/how to use img.jpeg" alt="How to Use?">
+                            </div>
+                        </div>
+                        <div class="calc-output">
+                            <div class="support-ctn">
+                                <div class="calc-output-text">
+                                    <label for="price">45°</label>
+
+                                    <!-- <output type="number" id="s2">45</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">90°</label>
+
+                                    <!-- <output type="number" id="s3">90</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">135°</label>
+
+                                    <!-- <output type="number" id="s4">135</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">180°</label>
+
+                                    <!-- <output type="number" id="s5">180</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">225°</label>
+
+                                    <!-- <output type="number" id="s6">225</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">270°</label>
+
+                                    <!-- <output type="number" id="s7">270</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">315°</label>
+
+                                    <!-- <output type="number" id="s8">315</output> -->
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">360°</label>
+
+                                    <!-- <output type="number" id="s8">360</output> -->
+                                </div>
+                            </div>
+                            <div class="support-ctn">
+                                <div class="calc-output-text">
+                                    <label for="price">Support 1</label>
+                                    <output type="number" id="1001"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 2</label>
+                                    <output type="number" id="s2"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 3</label>
+                                    <output type="number" id="s3"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 4</label>
+                                    <output type="number" id="s4"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 5</label>
+                                    <output type="number" id="s5"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 6</label>
+                                    <output type="number" id="s6"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 7</label>
+                                    <output type="number" id="s7"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Support 8</label>
+                                    <output type="number" id="s8"></output>
+                                </div>
+                            </div>
+                            <div class="resistance-ctn">
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 1</label>
+                                    <output type="number" id="r1"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 2</label>
+                                    <output type="number" id="r2"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 3</label>
+                                    <output type="number" id="r3"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 4</label>
+                                    <output type="number" id="r4"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 5</label>
+                                    <output type="number" id="r5"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 6</label>
+                                    <output type="number" id="r6"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 7</label>
+                                    <output type="number" id="r7"></output>
+                                </div>
+                                <div class="calc-output-text">
+                                    <label for="price">Resistance 8</label>
+                                    <output type="number" id="r8"></output>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calc-in-ctn">
+        <div class="rec-blog">
+            This portion will be used for showing blog recommendations
+        </div>
+    </div>
+</section>

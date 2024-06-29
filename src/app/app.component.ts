@@ -17,3 +17,8 @@ import './app.component.css';
 export class AppComponent {
   title = 'Trinity-Chart';
 }
+export class PageInput {
+  title: string = "";
+  brief1: string = "";
+  brief2: string = "";
+} 
